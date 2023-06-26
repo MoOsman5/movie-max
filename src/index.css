@@ -1,3 +1,8 @@
+:root{
+  background-color: rgb(53, 53, 53);
+  
+
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,98 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  background-color: rgb(53, 53, 53);
+}
+
+.card {
+  position: relative;
+  display: block;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  height: 10%;
+  border: 0px;
+  margin-bottom: 20px;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+}
+
+.card__overlay {
+  position: absolute;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(00, 00, 00, 0.60);
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #fff;
+  opacity: 0;
+  transition: .8s
+  
+}
+.card:hover {
+  transform: scale(1.1);
+  z-index:2;
+  
+}
+
+.card:hover .card__overlay {
+  opacity: 1;
+}
+
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:80% ;
+  text-align: center;
+  transform: translate(-50%,-50% );
+}
+
+.center-div p {
+  font-size: 17px;
+}
+
+.container {
+  padding: 0 10px;
+  padding-top:50px;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  position: fixed;
+  top: 0;
+}
+
+.pre-pagination{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius:5px;
+  list-style: none;
+}
+.next-pagination{
+  border-bottom-right-radius: 5px;
+  border-top-right-radius:5px;
+}
+.pagination .page-link {
+  background: rgb(35, 35, 35);
+  color: white;
+}
+
+.poster_image{
+  width: 40%;
+  margin: auto;
+  display: block;
+  height: 500px;
 }
